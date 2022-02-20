@@ -41,9 +41,6 @@ class App:
                 if i.type == pg.KEYDOWN:
                     if i.key == pg.K_q:
                         self.menu.run()
-                    if i.key == pg.K_LEFT:
-                        for i in self.gete:
-                            i.y += 10
             self.clock.tick(FPS)
             pg.display.set_caption(f'FPS: {self.clock.get_fps() :.2f}')
             self.draw()
